@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="198px" viewBox="0 0 1600 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>wave2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-10.959%" id="linearGradient-1">
+            <stop stop-color="#F3FDFD" stop-opacity="0.04" offset="0%"></stop>
+            <stop stop-color="#F4FDFE" stop-opacity="0.0776437953" offset="55.8684068%"></stop>
+            <stop stop-color="#F5FDFF" stop-opacity="0.246518342" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-63.000000, -114.000000)" fill="url(#linearGradient-1)">
+            <path d="M63,114 L1663,114 L1663,291.004767 C1607.31587,272.203519 1546.8216,272.203519 1481.51718,291.004767 C1383.56056,319.206639 1338.50719,310.428656 1287.80023,291.004767 C1237.09327,271.580878 1163.73019,271.580878 1097.20653,291.004767 C1030.68287,310.428656 958.230043,310.428656 891.113469,291.004767 C823.996894,271.580878 739.944597,271.580878 670.004695,291.004767 C600.064793,310.428656 540.006185,310.428656 472.416653,291.004767 C404.827122,271.580878 351.976226,271.580878 261.060482,291.004767 C170.144738,310.428656 144.730734,326.444846 63,291.004767 L63,114 Z" id="wave2" transform="translate(863.000000, 213.000000) scale(1, -1) translate(-863.000000, -213.000000) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Cambo|Quicksand');
+
+
+body {
+  background: linear-gradient(45deg, #404c8c, #0f7699);
+  background-size: 1000% 1000%;
+  font: nomral 1rem/1.6rem 'Quicksand', sans-serif; /* font: font-style font-variant font-weight font-size/line-height font-family; */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cambo', serif;
+}
+
+
+/*------------------------------------ Typed Script Styles -------------------------------------*/
+/*----------------------------------------------------------------------------------------------*/
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+/*----------------------------------------------------------------------------------------------*/
