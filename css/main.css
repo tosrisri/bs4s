@@ -1,16 +1,88 @@
-
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Cambo|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+
+/* CSS4 Global Variables */
+:root {
+  --primary-text-color: #cccccc;
+  --heading-text-color: #dddddd;
+  --active-text-color: #ffffff;
+  --text-font-size: 1rem;
+  /* --primary-font: 'Thasadith', sans-serif; */
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Cambo', serif;
+  --tertiary-font: 'Quicksand', sans-serif;
+}
+
 
 
 body {
   background: linear-gradient(45deg, #404c8c, #0f7699);
   background-size: 1000% 1000%;
-  font: nomral 1rem/1.6rem 'Quicksand', sans-serif; /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  color: var(--primary-text-color);
+  font-family: var(--primary-font);
+  font-size: var(--text-font-size);
+  
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cambo', serif;
+  font-family: var(--secondary-font);
 }
+p {
+  font-family: var(--primary-font);
+  font-weight: 100;
+}
+
+
+
+/* Boostrap Overrides */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: var(--active-text-color);
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255,255,255,.5);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+/* animate underline on hover */
+.navbar-nav li { 
+  position: relative;
+  margin: 0 1rem;
+}
+.navbar-nav li a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  position: relative;
+}
+.navbar-nav li a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: rgba(255,255,255,.5);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-nav li a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+
+
+
+
 
 
 /*------------------------------------ Typed Script Styles -------------------------------------*/
