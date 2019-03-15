@@ -6,8 +6,8 @@
 
 /* CSS4 Global Variables */
 :root {
-  --primary-text-color: #cccccc;
-  --heading-text-color: #dddddd;
+  --primary-text-color: #dddddd;
+  --heading-text-color: #f0f0f0;
   --active-text-color: #ffffff;
   --text-font-size: 1rem;
   /* --primary-font: 'Thasadith', sans-serif; */
@@ -24,14 +24,55 @@ body {
   color: var(--primary-text-color);
   font-family: var(--primary-font);
   font-size: var(--text-font-size);
-  
 }
+
+h1, h2, h3, h4, h5, h6, p, a, span 
+{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--secondary-font);
+  color:var(--active-text-color);
+  text-transform: capitalize;
 }
+h1, section#hero h1 {
+  font-size: calc(var(--text-font-size)*3);
+}
+section h1 {
+  font-size: calc(var(--text-font-size)*5);
+}
+section h1::after {
+  display: block;
+  content: " ";
+  border: 1px solid;
+  width: 6rem;
+  margin-bottom: 1rem;
+} 
+h2 {
+  font-size: calc(var(--text-font-size)*3.5);
+}
+h3 {
+  font-size: calc(var(--text-font-size)*2.5);
+}
+h4 {
+  font-size: calc(var(--text-font-size)*2);
+}
+h5 {
+  font-size: calc(var(--text-font-size)*1.5);
+}
+h6 {
+  font-size: calc(var(--text-font-size)*1.1);
+}
+
+
+
 p {
   font-family: var(--primary-font);
-  font-weight: 100;
+  font-weight: 300;
+  letter-spacing: 0.001rem;
+  line-height: 1.6;
 }
 
 
@@ -156,7 +197,87 @@ section {
     50% { opacity:0; }
     100% { opacity:1; }
 }
-/*----------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------ Technical Skills Styles -------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+  background: #eee;
+  height: 16px;
+  border-radius: 8px;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  color: #ffffff;
+  background: #6adcfa;
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 10px;
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.skillbar-bar {
+  height: 16px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 8px;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+section .card {
+  background-color: transparent;
+}
+
+
+
+
 
 
 
